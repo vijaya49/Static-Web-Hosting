@@ -28,7 +28,7 @@ jobs:
 
       - name: Create S3 Bucket (if not exists)
         run: |
-          aws s3 mb s3://tatic-web-hosting-vijay49 || true
+          aws s3 mb s3://static-web-hosting-vijay49 || true
 
       - name: Upload Website Files
         run: |

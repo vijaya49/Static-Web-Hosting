@@ -17,7 +17,7 @@ module "github_oidc" {
         "s3:ListBucket",
         "s3:GetBucketLocation"
       ]
-      Resource = "arn:aws:s3:::Static-Web-Hosting-Vijay49"
+      Resource = "*"
     },
 
     # Allow object level access
@@ -28,7 +28,7 @@ module "github_oidc" {
         "s3:GetObject",
         "s3:DeleteObject"
       ]
-      Resource = "arn:aws:s3:::Static-Web-Hosting-Vijay49/*"
+      Resource = "*"
     },
 
     # Optional: if creating bucket via Terraform
@@ -40,7 +40,7 @@ module "github_oidc" {
         "s3:PutBucketWebsite",
         "s3:PutBucketPublicAccessBlock"
       ]
-      Resource = "arn:aws:s3:::Static-Web-Hosting-Vijay49/*"
+      Resource = "*"
     }
   ]
 }
