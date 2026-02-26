@@ -1,9 +1,9 @@
 name: Deploy S3 Static Website
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 permissions:
   id-token: write   # Required for OIDC
