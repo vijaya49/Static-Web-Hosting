@@ -34,4 +34,4 @@ jobs:
         run: |
           pwd
           ls -lart
-          aws s3 cp README.md s3://static-web-hosting-vijay49 --delete
+          aws s3 cp README.md s3://static-web-hosting-vijay49/README.md
