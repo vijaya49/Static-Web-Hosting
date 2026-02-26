@@ -32,5 +32,6 @@ jobs:
 
       - name: Upload Website Files
         run: |
+          pwd
           ls -lart
           # aws s3 sync README.md s3://static-web-hosting-vijay49 --delete
